@@ -1,0 +1,27 @@
+{
+  "name": "capstone-one",
+  "version": "1.0.0",
+  "description": "Implement journal entries for users.",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm-run-all -p nodemon browser-sync",
+    "nodemon": "nodemon server.js",
+    "browser-sync": "browser-sync start --proxy localhost:4040 --files=**/*  --ignore=node_modules --reload-delay 5000 --no-ui",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "browser-sync": "^2.28.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.0",
+    "nodemon": "^2.0.21",
+    "npm-run-all": "^4.1.5",
+    "pg": "^8.11.0",
+    "sequelize": "^6.31.1"
+  },
+  "keywords": []
+}
