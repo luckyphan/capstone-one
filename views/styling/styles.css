@@ -1,0 +1,133 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    
+    }
+body{
+    background-image: url('clouds.gif');
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly ;
+    position: relative;
+    top:60px;
+}
+#logout{
+    display: block;
+    position: fixed;
+    right:50px;
+    color: #ffe8ff;
+    background-color: #ea7fff;
+    border-radius: 15px;
+    height: 30px;
+    width: 77px;
+}
+#delete{
+    position: relative;
+    top:50px;
+    width: 60px;
+    color: #ffe8ff; 
+    background-color: #ea7fff;
+    border-radius: 15px; 
+}
+#entry-close{
+    display: block;
+    position: relative;
+    color: #1e81bf;
+    top: 0px;
+    left: 390px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border-color: #1e81bf;
+    font-size: 20px;
+}
+#entry-create{
+    display: block;
+    background-color: #A1EBF5;
+    color: #1e81bf;
+    border: 0.2px solid rgb(173, 195, 196);
+    border-radius: 60%;
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    left:20px;
+    bottom: 30px;
+    font-size: 40px;
+    font-weight: thin;
+}
+#edit{
+    display: block;
+    position: relative;
+    top:30px;
+    left: 300px;
+}
+#entrySubmit{
+    width: 60px;
+    display: block;
+    position: relative;
+    top:70px;
+    left: 340px;
+    color: #ffe8ff;
+    background-color: #ea7fff;
+    border-radius: 15px;
+    
+}
+#entryTitle{
+    padding: 5px;
+    border-radius: 15px;
+    border-color: #A1EBF5;
+    width: 170px;
+    text-align: center;
+    position: relative;
+    top:20px;
+    left: 15px;
+    display: block;
+}
+#entryBody{
+    border-radius: 10px;
+    border-color: #A1EBF5;
+    position: relative;
+    top:60px;
+    left: 10px;
+    width:395px;
+    height:380px;
+    word-wrap: break-word;
+    display: block;
+    resize: none;
+}
+#entry-in-container{
+    border-color: #A1EBF5;
+    display: block;
+    width:420px;
+    background:#A1EBF5;
+    border-radius: 15px;
+    height:570px;
+    border:1px solid #c6c4c4;
+    overflow: hidden;
+}
+
+.entry-card{
+    color: #ffe8ff;
+    background-color: #ea7fff;
+    width: 300px;
+    height: 37px;
+    margin: 15px; 
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+#entryContainer{
+    height:660px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.entry-text{
+    font-size: 16px;
+    position: relative;
+    top:-5px;
+}

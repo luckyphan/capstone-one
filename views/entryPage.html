@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../views/styling/styles.css" rel="stylesheet">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <main>
+        <button id = "logout" onclick="signOut">logout</button>
+        <div class="container">
+            
+            <!-- divide the page in half -->
+                
+                <div> 
+                    <div class="centered" id = "entryContainer">
+                    </div>
+                </div>
+                <button id = "entry-create">+</button>
+            
+                <div class="centered">
+                    
+                    <div id="entry-in-container">
+                        <button id = "entry-close">X</button>
+                        <button id = "edit">edit</button>
+                        
+                        <form id = "titleBody">
+                        <input id = "entryTitle" placeholder="name your entry">
+                        <textarea id= "entryBody"placeholder="write about today..."></textarea>
+                        
+                        <input type="submit" value="Submit" id = "entrySubmit">
+                        
+                        </form>
+                        <button id = "delete">delete</button>
+                    </div>
+                </div>
+            
+
+        </div>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="views/journal.js"></script>
+</body>
+</html>
