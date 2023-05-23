@@ -10,6 +10,7 @@ let logoutbtn= document.getElementById('logout')
 const entryContainer = document.getElementById('entryContainer')
 const edit = document.getElementById('edit')
 const deleteBtn = document.getElementById('delete')
+const entrySubmit = document.getElementById('entrySubmit')
 let curEventID = 0;
 
 logoutbtn.addEventListener('click',(event)=>{
@@ -25,6 +26,11 @@ const exitEntry = (event) => {
 }
 const openEntry = () => {
     entry.style.display ="block";
+    entryTitle.value = ''
+    entryBody.value = ''
+    entrySubmit.style.display="block";
+    deleteBtn.style.display ="none";
+    edit.style.display ="none";
 }
 /********* [entry buttons] *********/
 
@@ -98,11 +104,14 @@ function createEntryCard(entry){
 /***************** [Make new entry clickable and put in list after add] *****************/
 
 function editEntry(event){
+    
     let entryID = event.target.id
     curEventID = entryID
     // console.log(entryID)
     openEntry();
-
+    entrySubmit.style.display="none";
+    deleteBtn.style.display ="block";
+    edit.style.display ="block";
     axios.get(`${baseURL}/entry/getEntry/${entryID}`)
     .then((entry) => {
         //selects the specific entry by id

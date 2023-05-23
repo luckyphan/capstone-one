@@ -4,44 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+      </style>
     <link href="../views/styling/styles.css" rel="stylesheet">
 
-    <title>Login</title>
+    <title>Unravel</title>
 </head>
 
 <body>
     <main>
         <button id = "logout" onclick="signOut">logout</button>
-        <div class="container">
+        <article class="container">
+
+            <section class="centered" id = "entryContainer">
+            </section>
             
-            <!-- divide the page in half -->
+            <button id = "entry-create">+</button>
                 
-                <div> 
-                    <div class="centered" id = "entryContainer">
-                    </div>
-                </div>
-                <button id = "entry-create">+</button>
-            
-                <div class="centered">
+            <aside class="centered">
                     
-                    <div id="entry-in-container">
-                        <button id = "entry-close">X</button>
-                        <button id = "edit">edit</button>
-                        
-                        <form id = "titleBody">
+                <div id="entry-in-container">
+                    
+                    <button id = "entry-close">X</button>
+                    <button id = "delete">delete</button>
+                    
+                    <form id = "titleBody">
                         <input id = "entryTitle" placeholder="name your entry">
                         <textarea id= "entryBody"placeholder="write about today..."></textarea>
-                        
                         <input type="submit" value="Submit" id = "entrySubmit">
+                    
+                    </form>
+                    
+                    <button id = "edit">edit</button>
                         
-                        </form>
-                        <button id = "delete">delete</button>
-                    </div>
                 </div>
-            
-
-        </div>
+            </aside>
+        </article>
     </main>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="views/journal.js"></script>

@@ -1,7 +1,7 @@
 html,body{
     width: 100%;
     height: 100%;
-    
+    cursor: url(leaf.png),auto;
     }
 body{
     background-image: url('clouds.gif');
@@ -15,24 +15,28 @@ body{
     top:60px;
 }
 #logout{
-    display: block;
     position: fixed;
     right:50px;
-    color: #ffe8ff;
-    background-color: #ea7fff;
+    top:20px;
+    background-color: #a9a1f5;
+    color: #ffffff;
     border-radius: 15px;
-    height: 30px;
-    width: 77px;
+    height: 33px;
+    width: 80px;
+
 }
 #delete{
-    position: relative;
-    top:50px;
     width: 60px;
     color: #ffe8ff; 
     background-color: #ea7fff;
-    border-radius: 15px; 
+    border-radius: 15px;
+    display: none;
+    position: relative;
+    top:44px;
+    left:230px;
 }
 #entry-close{
+    cursor:pointer;
     display: block;
     position: relative;
     color: #1e81bf;
@@ -46,78 +50,100 @@ body{
 }
 #entry-create{
     display: block;
-    background-color: #A1EBF5;
-    color: #1e81bf;
+    background-color: #a9a1f5;
+    color: white;
     border: 0.2px solid rgb(173, 195, 196);
     border-radius: 60%;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     position: fixed;
-    left:20px;
+    left:35px;
     bottom: 30px;
     font-size: 40px;
     font-weight: thin;
+    cursor:grab;
 }
 #edit{
-    display: block;
     position: relative;
-    top:30px;
-    left: 300px;
+    top:63px;
+    width: 60px;
+    color: #ffe8ff; 
+    background-color: #ea7fff;
+    border-radius: 15px; 
+    left: 340px;
+    display: none;
 }
 #entrySubmit{
+    cursor:pointer;
     width: 60px;
     display: block;
     position: relative;
-    top:70px;
+    top:67px;
     left: 340px;
-    color: #ffe8ff;
-    background-color: #ea7fff;
+    color: #1e81bf;
     border-radius: 15px;
     
 }
 #entryTitle{
     padding: 5px;
     border-radius: 15px;
-    border-color: #A1EBF5;
+    border-color: #a9a1f5;
     width: 170px;
     text-align: center;
     position: relative;
-    top:20px;
+    top:17px;
     left: 15px;
     display: block;
+    font-size: 16px;
+    font-family: 'Solitreo', cursive;
+    cursor: url(pencil.png),auto;
 }
 #entryBody{
     border-radius: 10px;
-    border-color: #A1EBF5;
+    border-color: #a9a1f5;
     position: relative;
-    top:60px;
+    top:50px;
     left: 10px;
     width:395px;
     height:380px;
     word-wrap: break-word;
     display: block;
     resize: none;
+    font-family: 'Solitreo', cursive;
+    font-size: 14.7px;
+    cursor: url(pencil.png),auto;
 }
 #entry-in-container{
     border-color: #A1EBF5;
     display: block;
     width:420px;
-    background:#A1EBF5;
+    background:#b9b1fb;
     border-radius: 15px;
     height:570px;
     border:1px solid #c6c4c4;
     overflow: hidden;
+    position: relative;
+    top:20px;
+    cursor: url(pencil.png),auto;
 }
 
 .entry-card{
-    color: #ffe8ff;
-    background-color: #ea7fff;
-    width: 300px;
+    cursor:grab;
+    color: white;
+    background-color: #e178f6;
+    width: 270px;
     height: 37px;
     margin: 15px; 
     display: flex;
     flex-direction: column;
+    font-family: 'Solitreo', cursive;
     border-radius: 30px;
+    box-shadow: -1px 1px 0 #b9c0c2,
+                          1px 1px 0 #de6fd4,
+                         1px -1px 0 #fdbbff,
+                        -1px -1px 0 #eee3e3;
+    text-shadow: -1px 1px 0 #c471c4,
+    1px 1px 0 #ce94d0;
 }
 
 #entryContainer{
