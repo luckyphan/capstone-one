@@ -1,7 +1,7 @@
 html,body{
     width: 100%;
     height: 100%;
-    cursor: url(leaf.png),auto;
+    cursor: url(flower.png),auto;
     }
 body{
     background-image: url('clouds.gif');
@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: space-evenly ;
     position: relative;
-    top:60px;
+    top:100px;
 }
 #logout{
     position: fixed;
@@ -23,6 +23,7 @@ body{
     border-radius: 15px;
     height: 33px;
     width: 80px;
+    cursor: pointer;
 
 }
 #delete{
@@ -40,8 +41,8 @@ body{
     display: block;
     position: relative;
     color: #1e81bf;
-    top: 0px;
-    left: 390px;
+    top: 5px;
+    left: 385px;
     border-radius: 50%;
     height: 30px;
     width: 30px;
@@ -50,7 +51,7 @@ body{
 }
 #entry-create{
     display: block;
-    background-color: #a9a1f5;
+    background-color: #a9a1f5b9;
     color: white;
     border: 0.2px solid rgb(173, 195, 196);
     border-radius: 60%;
@@ -62,6 +63,10 @@ body{
     font-size: 40px;
     font-weight: thin;
     cursor:grab;
+    box-shadow: -1px 1px 0 #b9c0c2,
+    1px 1px 0 #5e7ab7,
+   1px -1px 0 #67a3d5,
+  -1px -1px 0 #eee3e3;
 }
 #edit{
     position: relative;
@@ -95,8 +100,7 @@ body{
     left: 15px;
     display: block;
     font-size: 16px;
-    font-family: 'Solitreo', cursive;
-    cursor: url(pencil.png),auto;
+    /* font-family: 'Solitreo', cursive; */
 }
 #entryBody{
     border-radius: 10px;
@@ -109,7 +113,7 @@ body{
     word-wrap: break-word;
     display: block;
     resize: none;
-    font-family: 'Solitreo', cursive;
+    /* font-family: 'Solitreo', cursive; */
     font-size: 14.7px;
     cursor: url(pencil.png),auto;
 }
@@ -124,36 +128,37 @@ body{
     overflow: hidden;
     position: relative;
     top:20px;
-    cursor: url(pencil.png),auto;
+    cursor:auto;
 }
 
 .entry-card{
     cursor:grab;
     color: white;
-    background-color: #e178f6;
+    background-color: #b381f56f;
     width: 270px;
-    height: 37px;
+    height: 60px;
     margin: 15px; 
     display: flex;
     flex-direction: column;
-    font-family: 'Solitreo', cursive;
     border-radius: 30px;
     box-shadow: -1px 1px 0 #b9c0c2,
                           1px 1px 0 #de6fd4,
                          1px -1px 0 #fdbbff,
                         -1px -1px 0 #eee3e3;
-    text-shadow: -1px 1px 0 #c471c4,
-    1px 1px 0 #ce94d0;
+    /* text-shadow: -1px 1px 0 #c471c4,
+    1px 1px 0 #ce94d0; */
 }
 
 #entryContainer{
-    height:660px;
+    height:610px;
     overflow-y: auto;
     text-align: center;
+    position: relative;
+    top:20px;
 }
 
 .entry-text{
     font-size: 16px;
     position: relative;
-    top:-5px;
+    top:5px;
 }

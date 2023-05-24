@@ -13,13 +13,28 @@ const deleteBtn = document.getElementById('delete')
 const entrySubmit = document.getElementById('entrySubmit')
 let curEventID = 0;
 
+
+
+if(entryBody.placeholder === "write about today..."){
+    axios.get("https://type.fit/api/quotes").then((res) =>{
+    function generateRandomInteger(max) {
+        return Math.floor(Math.random() * max) + 1;
+    }
+    let num = generateRandomInteger(res.data.length)
+    let {text,author} = res.data[num]
+    if(typeof author == 'object'){
+        author = 'unknown'
+    }
+    entryBody.placeholder = `Here's an inspirational quote: \n\n${text} \n\n\t\t\t-${author}\n\n\n\n\tWrite something about today. `;
+})
+}
+
 logoutbtn.addEventListener('click',(event)=>{
     console.log(event)
     sessionStorage.clear()
     window.location.href = `${baseURL}`
     
 })
-// const entryGrab = document.getElementsByClassName('entry-card')
 /********* entry buttons *********/
 const exitEntry = (event) => {
     event.target.parentElement.style.display ="none";
@@ -61,6 +76,7 @@ form.addEventListener('submit', (event) => {
 
     entryTitle.value = ''
     entryBody.value = ''
+    location.reload();
 })
 /***************** [Entry input] *****************/
 
@@ -135,7 +151,7 @@ function sendEntry(){
     }
     axios.put(`${baseURL}/entry/update/${entryID}`, {bod})
     .then((entry) => {
-        alert('its been updated')
+        alert('your entry has been updated')
         location.reload();
     })
     .catch((err) => console.log(err));
@@ -152,7 +168,7 @@ function ridEntry(){
     console.log('deleting ',entryID)
     axios.delete(`${baseURL}/entry/delete/${entryID}`)
     .then((entry) => {
-        alert('its been deleted')
+        alert('the entry is now deleted')
         location.reload();
     })
     .catch((err) => console.log(err));

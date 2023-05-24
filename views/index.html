@@ -1,39 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="../views/styling/regLogin.css" rel="stylesheet">
-
-    <title>Login</title>
-</head>
-<body>
-    <main>
-        <section class="container">
-            <h2>Login</h2>
-            <h3>Enter username</h3>
-            <input type="text" id="username"/>
-            
-            <h3>Enter password</h3>
-            <input type="text" id="password"/>
-            <button id='userLogin'>Submit</button>
-
-
-            <h2>Sign Up</h2>
-            <h3>Enter new username</h3>
-            <input type="text" id="newUser"/>
-            
-            <h3>Create Password</h3>
-            <input type="text" id="newPassword"/>
-            <button id='newUserSubmit'>Create User</button>
-
-        </section>
-
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="/views/main.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="views/styling/regLogin.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main class ="row">
+        <aside class="col-md-6 mx-auto p-0">
+            <article class="card">
+                <article class="login-box">
+                    <div class="login-snip">
+                        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label>
+                        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Register</label>
+                        <div class="login-space">
+                            <div class="login">
+                                <div class="group">
+                                    <label for="user" class="label">Username</label>
+                                    <input id="username" type="text" class="input"  placeholder="Enter your username">
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="password" type="text" class="input" data-type="password" placeholder="Enter your password">
+                                </div>
+                                <div class="group">
+                                    <button id="userLogin" class="button">Submit</button>
+                                </div>
+                                <div class="hr"></div>
+                            </div>
+                            <div class="sign-up-form">
+                                <div class="group">
+                                    <label for="user" class="label">Username</label>
+                                    <input id="newUser" type="text" class="input" placeholder="Enter a username">
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="newPassword" type="text" class="input" data-type="password" placeholder="Enter a password">
+                                </div>
+                                <div class="group">
+                                    <button id="newUserSubmit" class="button">Register</button>
+                                </div>
+                                <div class="hr"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>   
+            </article>
+        </aside>
     </main>
-
-</body>
+    <script>
+    (function() {
+        $(".btn").click(function() {
+        $(".form-signin").toggleClass("form-signin-left");
+        $(".form-signup").toggleClass("form-signup-left");
+        $(".frame").toggleClass("frame-long");
+        $(".signup-inactive").toggleClass("signup-active");
+        $(".signin-active").toggleClass("signin-inactive");
+        $(".forgot").toggleClass("forgot-left");
+        $(this).removeClass("idle").addClass("active");
+        });
+        });
+        
+        (function() {
+        $(".btn-signup").click(function() {
+        $(".nav").toggleClass("nav-up");
+        $(".form-signup-left").toggleClass("form-signup-down");
+        $(".success").toggleClass("success-left");
+        $(".frame").toggleClass("frame-short");
+        });
+        });
+        
+        (function() {
+        $(".btn-signin").click(function() {
+        $(".btn-animate").toggleClass("btn-animate-grow");
+        $(".welcome").toggleClass("welcome-left");
+        $(".cover-photo").toggleClass("cover-photo-down");
+        $(".frame").toggleClass("frame-short");
+        $(".profile-photo").toggleClass("profile-photo-down");
+        $(".btn-goback").toggleClass("btn-goback-up");
+        $(".forgot").toggleClass("forgot-fade");
+        });
+        });</script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="../views/main.js"></script>
+  </body>
 </html>

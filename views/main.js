@@ -10,8 +10,6 @@ const password = document.getElementById('password')
 const newPassword = document.getElementById('newPassword')
 
 
-
-
 const login = (event) => {
     event.preventDefault()
   let body = { username: username.value, password: password.value }
