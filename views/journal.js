@@ -1,4 +1,4 @@
-const baseURL = `http://localhost:4040`;
+const baseURL = `http://54.159.30.41`;
 
 const closeEntry = document.getElementById('entry-close') 
 const createEntry = document.getElementById('entry-create') 
