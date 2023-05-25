@@ -32,10 +32,10 @@ const signUp = () => {
     .then(async (res) => {
       let token = await res.data.token;
       sessionStorage.setItem("token", token);
-      sessionStorage.setItem("userID", user_id);
      
     })
-    .catch((err) => console.log(err));
+    .catch((err) => alert(err));
+    alert('Successly registered. Please login.')
   }
 
 
