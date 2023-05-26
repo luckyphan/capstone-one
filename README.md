@@ -1,17 +1,16 @@
-# Unravel 
+# Unravel  :open_book:
 
-A journaling application where users can keep track of their thoughts. 
-
-<p align=”center”>
-
-<img width=”200" height=”200" src=”https://user-images.githubusercontent.com/75753187/123358567-aac7b900-d539-11eb-8275-0b380264bb4c.png" alt=”my banner”>
-        </p>                                                                                                                             
-                                                                                                                                     
-![alt text](”https://userimages.githubusercontent.com/75753187/123358567-aac7b900-d539-11eb-8275-0b380264bb4c.png)
+[Unravel](http://54.159.30.41/) is a journaling application where users can keep track of their thoughts. Privacy enabled by login feature using JWT and user's entries include CRUD operations.
+<br/>
 
 
+<br/>
 
-tech stack
+> Inspired by the benefits of journaling: to reduce stress :seedling:, increase mindfullness :peace_symbol:, and improve focus and clarity :mag_right:
+
+<br/>
+
+### Tech Stack
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -21,3 +20,11 @@ tech stack
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
+
+<br/>
+
+### API used for motivational quotes
+[Movitivational Quotes API](https://type.fit/api/quotes) - changed the null quotes to unknown in the web app
+
+### Planning 
+[Trello](https://trello.com/invite/b/j5U2t6hR/ATTI7b0fbf660aa43dd34fd31bb1bcc6c3969CA6645F/unravel)
